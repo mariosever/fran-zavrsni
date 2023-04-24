@@ -1,0 +1,186 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+    font-family: 'TT Hoves Pro Trial', sans-serif; 
+    background-color: #0A1323;
+    color: white;
+}
+
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+	width: 100%;
+	height: 50px;
+}
+
+.logo img{
+    width: 50px;
+    height: 30px;
+}
+
+#hambi {
+    width: 50px;
+    height: 30px;
+    position: relative;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+  
+#hambi span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: white;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+#hambi span:nth-child(1) {
+    top: 0px;
+    transform-origin: left center;
+}
+  
+#hambi span:nth-child(2) {
+    top: 18px;
+    transform-origin: left center;
+}
+  
+#hambi span:nth-child(3) {
+    top: 36px;
+    transform-origin: left center;
+}
+  
+#hambi.open span:nth-child(1) {
+    
+   
+    left: -16px;
+}
+  
+#hambi.open span:nth-child(2) {
+   
+    left: 16;
+}
+  
+#hambi.open span:nth-child(3) {
+    left: -16px;
+}
+
+
+/* --- HEADER --- */
+
+.header_home{
+    padding: 30px;
+    background-image: url('/images/home_main_bg.jpg');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 50%;
+}
+
+.blue{
+	color: #437AE3;
+	font-size: 92px;
+}
+
+.header_text {
+    position: relative;
+    height: 90vh;
+    padding-top: 40px;
+}
+
+.header_text h1 {
+	font-size: 72px;
+	border-bottom: 0.2px solid #fff;
+	width: 70%;
+	line-height: 100px;
+}
+
+.header_text p {
+	font-size: 24px;
+	font-weight: 200;
+	margin-top: 30px;
+}
+
+.header_text button {
+	margin-top: 20px;
+}
+
+.vertical_link {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    display: inline-block;
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate(270deg);
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+.vertical_link a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+}
+
